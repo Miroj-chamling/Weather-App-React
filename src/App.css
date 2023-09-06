@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.main-container{
+    display: flex;
+    padding: 10px 10px 10px 10px;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.side-container{
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    padding: 20px 25px 16px 25px ;
+    width: 50vh;
+    height: 100%;
+    background: rgba(2, 0, 0, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-container{
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.loc-icon{
+    padding: 5px 8px 0 8px;
+    color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-bar{
+    flex: 1;
+    background-color: transparent;
+    border: transparent;
+    font-size: 14px;
+    color: black;
+    padding: 6px 0px 6px 0;
+}
+.search-bar::placeholder{
+    color: black;
+}
+.search-bar:focus{
+    outline: none;
+}
+
+.display{
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: black;
+    border-bottom: 1px solid white;
+}
+
+.maindisplay{
+    font-size: 60px;
+    font-weight: 700;
+    word-wrap: break-word;
+    margin-bottom: 8px;
+}
+.location{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bottomdisplay{
+    margin-top: 20px;
+    color: white;
+    font-weight: 400;
+}
+
+.info-row{
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+
+}
+.weather{
+    z-index: 9999999999;
+    color: #FFAA33 
+    ;
+    font-weight: bold;
+    margin-left: 12px;
+    font-size: 50px;
+}
+
+.sunInfo{
+    color: #fff;
+    font-size: 16px;
+    margin-left: 12px;
 }
